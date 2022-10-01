@@ -12,6 +12,8 @@ import random
 import datetime
 from datetime import datetime
 
+app = Flask(__name__)
+
 now = datetime.now()
 today = date.today()
 
@@ -20,7 +22,6 @@ CLIENT_SECRET = "oT7ofudW6WEzM79WsaORQLc4_fa1s84l"
 REDIRECT_URI = "http://localhost:80/callback"
 OAUTH_URL = f"https://discord.com/api/oauth2/authorize?client_id=997228626456100944&redirect_uri={parse.quote(REDIRECT_URI)}&response_type=code&scope=identify"
 
-app = Flask(__name__)
 app.config['SECRET_KEY'] = "secret"
 client = APIClient(TOKEN, client_secret=CLIENT_SECRET)
 
@@ -139,4 +140,4 @@ def logout():
     return redirect("/")
 
 if __name__ == "__main__":
-    app.run(port="80", debug=True)
+    app.run(debug=True)
