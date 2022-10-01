@@ -1,0 +1,13 @@
+{
+  "Version": "14.1.0",
+  "Name": "ascend.cool",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://localhost/upload",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "secret_key": "Flz9lEmSHvavfCPkFHSF"
+  },
+  "FileFormName": "image",
+  "URL": "http://localhost/{json:filename}"
+}

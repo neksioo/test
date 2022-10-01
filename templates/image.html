@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;200&display=swap');
+:root {
+    --background: 14, 14, 16;
+    --white: 247, 247, 247;
+    --main: 225, 163, 174;
+    --primary: 17, 17, 18;
+    --secondary: 27, 27, 31;
+    --gray: 118, 118, 118;
+}
+
+body {
+  background-color: rgba(var(--background));;
+  font-family: Inter;
+  color: rgba(var(--white));;
+}
+
+.o {
+  background-color: rgba(var(--primary));    
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+h1 {
+    font-size: 23px;
+    font-weight: 700;
+}
+h2 {
+    font-size: 15px;
+    font-weight: 200;
+}
+a {
+  color:#9671DC;
+}
+.bottom {
+    left: 47%;
+    bottom: 1%;
+    padding: 15px;
+    position: fixed;
+}
+
+.bot {
+    text-decoration: none; 
+}
+
+.bot:hover {
+    transition: .3s ease-in-out;
+    text-shadow: 0px 0px 10px #9671DC;
+}
+
+</style>
+  <link href='style.css?v=1.1' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<br />
+<br />
+<div class="o"><img src="{{ss_location}}"></div>
+<br>
+<div class="o">
+    <h2>{{date}} {{hour}}<br>{{ss_thumbnail}} {{answer}} KB</h2>
+  </div>
+
+  
+<div class="bottom"><a class="bot" href='http://localhost'>ascend.cool</a></div>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+
+	<!DOCTYPE html>
+	<html>
+	
+	<head>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap');
+	:root {
+		--background: 14, 14, 16;
+		--white: 247, 247, 247;
+		--main: 225, 163, 174;
+		--primary: 17, 17, 19;
+		--secondary: 27, 27, 31;
+		--gray: 118, 118, 118;
+	}
+	
+	body {
+	  background-color: rgba(var(--background));;
+	  font-family: Inter;
+	  color: rgba(var(--white));;
+	}
+	
+	div {
+	  background-color: rgba(var(--primary));    
+	  text-align: center;
+	  width: 50%;
+	  margin: auto;
+	  padding: 15px;
+	  border-radius: 10px;
+	}
+	h1 {
+		font-size: 23px;
+		font-weight: 700;
+	}
+	h2 {
+		font-size: 15px;
+		font-weight: 300;
+	}
+	a {
+		text-decoration: none;
+	  color:#9671DC;
+	}
+	.key {
+		transition: .3s ease-in-out;
+		-webkit-filter: blur(4px);
+	}
+	.key:hover {
+		transition: .3s ease-in-out;
+		-webkit-filter: blur(0px);
+	}
+	.info {
+		color:#9671DC;
+	}
+	</style>
+	<title>ascend.cool</title>
+	</head>
+	<body>
+	{% if current_user %}  	
+	<br />
+	<br />
+	<div>
+	   <h1> ascend.cool </h1>
+	</div>
+	<br />
+	<div>
+	  <h1>Information</h1>
+	  <h2>Files Uploaded: <span class="info">{{count}}</span></h2>
+	  <h2>Storage Used:  <span class="info">{{size}}</span> MB</h2>
+	  <h2>Users with access:  <span class="info">{{whitelisted}}</span></h2>
+	</div>
+	<br>
+		<div>
+			<h1>User</h1>
+			<h2>{{current_user.username}}<span class="info"></span>{{current_user.discriminator}}</h2>
+			<a href='/static/ascend.cool.sxcu'>Config download</a>
+			<h2>Key: <span class="key"><span class="info"></span>{{key}}</span></span></h2>
+	  	</div>
+		<br>
+		  <div>
+			<a href='http://localhost/logout'>Logout</a>
+		</div>
+		<br />
+	{% else %}
+	<br />
+	<br />
+	<div>
+	   <h1> ascend.cool </h1>
+	</div>
+	<br />
+	<div>
+	  <h1>Information</h1>
+	  <h2>Files Uploaded: <span class="info">{{count}}</span></h2>
+	  <h2>Storage Used:  <span class="info">{{size}}</span> MB</h2>
+	  <h2>Users with access:  <span class="info">{{whitelisted}}</span></h2>
+	</div>
+	<br>
+	<div>
+		<a href='{{oauth_url}}'>Login</a>
+	</div>
+	</body>
+	{% endif %}
+	</html>
+

@@ -1,0 +1,62 @@
+a {
+	text-decoration: none;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family: "Courier New", Courier, Monaco;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 8pt;
+	z-index: 10;
+	color: #FFF;
+}
+
+a:hover {
+	font-weight: bold;
+}
+.z {
+	text-decoration: none;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family: "Courier New", Courier, Monaco;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 8pt;
+	z-index: 10;
+	color: #ff0000;
+}
+
+.z:hover {
+	color: #FFF;
+}
+.b {
+	text-decoration: none;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family: "Courier New", Courier, Monaco;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 8pt;
+	z-index: 10;
+	color: #ff0000;
+}
+
+.b:hover {
+	color: #FFF;
+}
+body {
+	background-color: #000;
+	color: #FFF;
+}
+pre {
+	font-size: 8pt;
+	font-family: "Courier New", Courier, Monaco;
+	padding-top: 2.5%;
+	padding-left: 0.5%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0px;
+}
+img {
+    width: 400px;
+}
